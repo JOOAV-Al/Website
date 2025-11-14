@@ -67,6 +67,9 @@ const garantpro = localFont({
 export const metadata: Metadata = {
   title: "JOOAV",
   description: "Redefining Retail Inventory and Logistics in Africa",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
