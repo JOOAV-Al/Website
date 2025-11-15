@@ -1,9 +1,12 @@
+import ProductsHero from '@/components/products/ProductsHero';
 import React from 'react'
 
 const ProductsPage = () => {
   return (
-    <div>ProductsPage</div>
-  )
+    <div className="flex min-h-screen gap-8">
+      <ProductsHero />
+    </div>
+  );
 }
 
 export default ProductsPage
