@@ -156,3 +156,9 @@
 .hero-desc {
   @apply text-white font-light text-sm sm:text-base md:text-lg lg:text-xl leading-6 md:leading-8;
 }
+.section-header {
+  @apply text-[#383D46] font-semibold text-2xl md:text-[28px] lg:text-[32px] md:leading-14 lg:leading-20;
+}
+.section-desc {
+  @apply text-[#49505B] font-normal text-base md:text-lg lg:text-xl leading-6 md:leading-8;
+}

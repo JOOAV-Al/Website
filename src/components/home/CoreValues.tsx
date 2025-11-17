@@ -22,10 +22,10 @@ const CoreValues = () => {
             <h2 className="text-[#51C4F3] font-medium text-lg ">
               OUR CORE VALUE
             </h2>
-            <h3 className="max-w-[548px] mx-auto lg:mx-0 text-[#383D46] font-semibold text-2xl md:text-[28px] lg:text-[32px] ">
+            <h3 className="max-w-[548px] mx-auto lg:mx-0 section-header">
               Expertly Managing Every Step From Transit to Warehousing
             </h3>
-            <p className="max-w-[90%] lg:max-w-[548px] mx-auto text-[#49505B] font-normal text-base md:text-lg lg:text-xl">
+            <p className="max-w-[90%] lg:max-w-[548px] mx-auto section-desc">
               We expertly manage every stage of your logistics journey from
               secure and efficient transit to organized, technology driven
               warehousing. Our team ensures your goods are handled with

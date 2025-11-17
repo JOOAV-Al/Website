@@ -1,4 +1,4 @@
-import { CoreProducts, CoreValue } from "@/interfaces/landing-page";
+import { CoreProducts, CoreValue, Slide, Testimonial } from "@/interfaces/landing-page";
 
 export const coreValues: CoreValue[] = [
   {
@@ -35,4 +35,83 @@ export const coreProducts: CoreProducts[] = [
     desc: "Manage stock in/out from your phone with real-time updates and alerts.",
     icon: "/smart-invt.svg"
   },
+]
+
+
+export const slides: Slide[] = [
+  {
+    id: 1,
+    title: "Seamless Distribution",
+    description:
+      "Ensuring fast, reliable delivery of goods to keep local markets stocked and thriving.",
+    image: "/core-values.webp", // Replace with your image path
+  },
+  {
+    id: 2,
+    title: "Reliable Logistics",
+    description:
+      "Connect suppliers with markets efficiently through our advanced distribution network.",
+    image: "/core-values.webp", // Replace with your image path
+  },
+  {
+    id: 3,
+    title: "Smart Solutions",
+    description:
+      "Technology-driven approach to optimize your supply chain and reduce costs.",
+    image: "/core-values.webp", // Replace with your image path
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    id: 1,
+    name: 'Chelle Bonte',
+    role: 'Founder',
+    company: 'Everyday',
+    content: 'Since adopting Jooav Inventory, we\'ve reduced stockouts by 30% and improved turnover by 35%.',
+    rating: 5
+  },
+  {
+    id: 2,
+    name: 'Owale',
+    role: 'Distributor',
+    company: '',
+    content: 'We now have more time to focus on our business and logistics. The system they\'re building is exactly what we need.',
+    rating: 5
+  },
+  {
+    id: 3,
+    name: 'Akane',
+    role: 'Wholesaler',
+    company: '',
+    content: `Jooav helped us restock on time without manual ordering. It's connected the manufacturer — fast and reliable.`,
+    rating: 5
+  },
+  {
+    id: 4,
+    name: 'Sarah Chen',
+    role: 'Operations Manager',
+    company: 'Metro Supplies',
+    content: 'The automated ordering system has transformed how we manage inventory. No more guesswork!',
+    rating: 5
+  },
+  {
+    id: 5,
+    name: 'David Okonkwo',
+    role: 'Store Owner',
+    company: '',
+    content: 'Real-time tracking and seamless communication with suppliers. This is the future of distribution.',
+    rating: 5
+  }
+];
+
+
+export const partners: string[] = [
+  "/expand-global.svg",
+  "/coca-cola.svg",
+  "/fidson.svg",
+  "/first-bank.svg",
+  "/moniepoint.svg",
+  "/zenith.svg",
+  "/dufil.svg",
 ]

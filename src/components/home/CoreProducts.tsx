@@ -15,16 +15,15 @@ const CoreProducts = () => {
             <h3 className="max-w-[548px] mx-auto lg:mx-0 text-[#383D46] font-semibold text-2xl md:text-[28px] lg:text-[32px]">
               Meet Jooav Inventory Jooav ERP
             </h3>
-            <p className="max-w-[90%] lg:max-w-[548px] mx-auto lg:mx-0 text-[#49505B] font-normal text-xs md:text-sm lg:text-base">
+            <p className="max-w-[90%] lg:max-w-[548px] mx-auto lg:mx-0 text-[#49505B] font-normal text-base md:text-sm lg:text-base">
               Jooav Inventory is the backbone of modern African commerce. Our
               mobile-first ERP platform enables FMCG retailers and wholesalers
               to monitor stock, restock directly from manufacturers, and manage
               operations effortlessly in one simple, intelligent dashboard.
             </p>
-            <div className="grid grid-cols-1 mt-3 gap-8 lg:gap-0 bg-transparent">
+            <div className="grid grid-cols-1 mt-4 gap-8 lg:gap-0 bg-transparent">
               {coreProducts?.map((cp, i) => {
                 const { value, desc, icon } = cp;
-                console.log(icon);
                 return (
                   <div
                     key={i}
@@ -37,7 +36,7 @@ const CoreProducts = () => {
                           alt={value}
                           width={24}
                           height={24}
-                          className="w-full w-6 h-6 lg:w-4 lg:h-4 xl:w-6 xl:h-6"
+                          className="w-6 h-6 lg:w-4 lg:h-4 xl:w-6 xl:h-6"
                         />
                       </div>
                       {i !== coreProducts.length - 1 && (
@@ -52,11 +51,11 @@ const CoreProducts = () => {
                         </div>
                       )}
                     </div>
-                    <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-start gap-3 max-w-[380px] lg:max-w-full mx-auto">
+                    <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-start gap-2 max-w-[380px] lg:max-w-full mx-auto">
                       <h3 className="text-xl lg:text-base xl:text-xl text-app-primary font-medium">
                         {value}
                       </h3>
-                      <p className="text-base lg:text-sm xl:text-base font-normal">
+                      <p className="text-[#49505B] text-base lg:text-sm xl:text-base font-normal">
                         {desc}
                       </p>
                     </div>

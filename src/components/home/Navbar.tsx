@@ -42,7 +42,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center z-40">
       <div className="fixed block lg:hidden w-[95%] sm:w-[90%] mt-10 px-4 xl:px-6">
         <div className="flex flex-row justify-between items-center">
           <Link href={"/"} className="block w-[102px] h-[27px] ring-0!">
