@@ -11,11 +11,9 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import React, { useState } from "react";
-interface NavLinkItem {
-  url: string;
-  label: string;
-}
+import { useState } from "react";
+import { NavLinkItem } from "@/interfaces/landing-page";
+
 const Navbar = () => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false)

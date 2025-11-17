@@ -1,3 +1,8 @@
+export interface NavLinkItem {
+  url: string;
+  label: string;
+}
+
 export interface CoreValue{
   value: string;
   desc: string;
@@ -24,4 +29,9 @@ export interface Testimonial {
   company: string;
   content: string;
   rating: number;
+}
+
+export interface FAQ{
+  question: string;
+  answer: string;
 }

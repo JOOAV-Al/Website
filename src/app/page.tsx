@@ -1,5 +1,6 @@
 import CoreProducts from "@/components/home/CoreProducts";
 import CoreValues from "@/components/home/CoreValues";
+import FAQ from "@/components/home/FAQ";
 import HomeHero from "@/components/home/HomeHero";
 import HeroCarousel from "@/components/home/HomeSlider";
 import MoreInformation from "@/components/home/MoreInformation";
@@ -26,6 +27,7 @@ export default function Home() {
       </div>
       <Partners />
       <MoreInformation />
+      <FAQ />
     </div>
   );
 }

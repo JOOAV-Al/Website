@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { coreProducts } from "@/data/landing-page";
 import Image from "next/image";
-import React from "react";
 
 const CoreProducts = () => {
   return (
@@ -66,7 +65,7 @@ const CoreProducts = () => {
           </div>
           <div className="flex-1 w-[90%] mb-6 lg:mb-0 mx-auto lg:w-full bg-transparent">
             <Image
-              src={"/core-products.webp"}
+              src={"/core-products.png"}
               alt="Core Products"
               width={640}
               height={605}

@@ -1,4 +1,4 @@
-import { CoreProducts, CoreValue, Slide, Testimonial } from "@/interfaces/landing-page";
+import { CoreProducts, CoreValue, FAQ, Slide, Testimonial } from "@/interfaces/landing-page";
 
 export const coreValues: CoreValue[] = [
   {
@@ -114,4 +114,22 @@ export const partners: string[] = [
   "/moniepoint.svg",
   "/zenith.svg",
   "/dufil.svg",
+]
+
+export const faqs: FAQ[] = [
+  {question: "How can I track my shipment?",
+    answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
+  },
+  {question: "What areas do you deliver to?",
+    answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
+  },
+  {question: "What should I do if my shipment is delayed or damaged?",
+    answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
+  },
+  {question: "Do you offer customized logistics solutions for businesses?",
+    answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
+  },
+  {question: "How do I get a delivery quote?",
+    answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
+  },
 ]

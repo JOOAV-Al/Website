@@ -1,5 +1,4 @@
 import SolutionsHero from '@/components/solutions/SolutionsHero';
-import React from 'react'
 
 const SolutionsPage = () => {
   return (

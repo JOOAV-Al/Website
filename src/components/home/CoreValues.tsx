@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { coreValues } from "@/data/landing-page";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import React from "react";
 
 const CoreValues = () => {
   return (

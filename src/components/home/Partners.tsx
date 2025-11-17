@@ -1,6 +1,5 @@
 import { partners } from "@/data/landing-page";
 import Image from "next/image";
-import React from "react";
 
 const Partners = () => {
   return (

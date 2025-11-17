@@ -1,5 +1,4 @@
 import ProductsHero from '@/components/products/ProductsHero';
-import React from 'react'
 
 const ProductsPage = () => {
   return (
