@@ -3,8 +3,7 @@ import Image from "next/image";
 
 const MoreInformation = () => {
   return (
-    // <div className="py-20">
-    <div className="bg-[#ebf1fa] flex flex-col lg:flex-row-reverse justify-between gap-12">
+    <section className="bg-[#ebf1fa] flex flex-col lg:flex-row-reverse justify-between gap-12">
       <div className="flex-1 w-full bg-transparent">
         <Image
           src={"/more-info.svg"}
@@ -39,8 +38,7 @@ const MoreInformation = () => {
           </div>
         </div>
       </div>
-    </div>
-    // </div>
+    </section>
   );
 };
 

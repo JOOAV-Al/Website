@@ -123,7 +123,7 @@ export default function TestimonialsCarousel() {
               <Button
                 key={index}
                 onClick={() => scrollTo(index)}
-                className={`h-2 p-0 rounded-full transition-all duration-300 ${
+                className={`h-2 p-0! rounded-full transition-all duration-300 ${
                   index === selectedIndex
                     ? "w-12 bg-app-secondary"
                     : "w-6 bg-[#51C4F3]"

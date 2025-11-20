@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const AboutHero = () => {
   return (
-    <div className="bg-linear-to-b from-app-primary via-app-primary to-white min-h-screen w-full py-50">
+    <div className="bg-linear-to-b from-app-primary via-app-primary to-white min-h-screen w-full py-20 flex items-center">
       <div className="text-center flex flex-col gap-4 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] max-w-4xl mx-auto">
         <h1 className="hero-header">
           Building Africa’s Virtual Depot for Smarter Retail

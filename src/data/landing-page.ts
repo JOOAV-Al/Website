@@ -1,4 +1,4 @@
-import { CoreProducts, CoreValue, FAQ, Slide, Testimonial } from "@/interfaces/landing-page";
+import { CoreProducts, CoreValue, FAQ, OurStory, Slide, Team, Testimonial } from "@/interfaces/landing-page";
 
 export const coreValues: CoreValue[] = [
   {
@@ -132,4 +132,73 @@ export const faqs: FAQ[] = [
   {question: "How do I get a delivery quote?",
     answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
   },
+]
+
+export const mission: CoreValue[] = [
+  {
+    value: "Mission",
+    desc: "To enhance efficiency, accessibility, and supply chain integration across African retail markets through AI-driven inventory and logistics solutions.",
+    bgColor: "bg-app-primary"
+  },
+  {
+    value: "Vision",
+    desc: "To become the “Walmart of Africa” by transforming the FMCG retail sector through technology-driven supply chain innovation.",
+    bgColor: "bg-[#51C4F3]"
+  },
+]
+
+export const theTeam: Team[] = [
+  {
+    name: "Frank Aladeojebi",
+    role: "Co - founder & CEO",
+    desc: "11+ years transforming retail practices across Nigeria’s South-West.",
+    imageMobile: "/ceo-mobile.svg",
+    imageDesktop: "/ceo-desktop.svg"
+  },
+  {
+    name: "Daniel Olowokere",
+    role: "Co - founder & CEO",
+    desc: "11+ years transforming retail practices across Nigeria’s South-West.",
+    imageMobile: "/co-ceo-mobile.svg",
+    imageDesktop: "/co-ceo-desktop.svg"
+  },
+  {
+    name: "Seun Akindeko",
+    role: "CFO",
+    desc: " ACA-certified finance expert focused on profitability and strategic growth.",
+    imageMobile: "/cfo-mobile.svg",
+    imageDesktop: "/cfo-desktop.svg"
+  },
+  {
+    name: "Atinuke Aladeojebi",
+    role: "Founder & Procurement Director",
+    desc: " 20+ years of supply chain experience, driving $5M+ in recurring FMCG sales.",
+    imageMobile: "/procurement-mobile.svg",
+    imageDesktop: "/procurement-desktop.svg"
+  },
+
+]
+
+export const ourStory: OurStory[] = [
+  {
+    text: "Idea",
+    year: "2023",
+    image: "/idea.svg"
+  },
+  {
+    text: "Pilot",
+    year: "2025",
+    image: "/pilot.svg"
+  },
+  {
+    text: "Scale",
+    year: "2026",
+    image: "/scale.svg"
+  },
+  {
+    text: "Nationwide Rollout",
+    year: "2026",
+    image: "/nationwide.svg"
+  },
+
 ]

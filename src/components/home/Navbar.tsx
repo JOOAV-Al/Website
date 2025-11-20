@@ -40,21 +40,25 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-center z-40">
-      <div className="fixed block lg:hidden w-[95%] sm:w-[90%] mt-10 px-4 xl:px-6">
-        <div className="flex flex-row justify-between items-center">
-          <Link href={"/"} className="block w-[102px] h-[27px] ring-0!">
+    <div className="flex justify-center z-40 bg-app-primary border-none!">
+      <div className="static block lg:hidden w-[95%] sm:w-[90%] mt-10 px-2 xl:px-6">
+        <nav className="flex flex-row justify-between items-center">
+          <Link href={"/"} className="block w-80 lg:w-[102px] ring-0!">
             <Image
               src={"/jooav-logo-2.svg"}
               alt="JOOAV Logo"
               width={102}
               height={27}
+              className="h-5 sm:h-6 md:h-[27px]"
             />
           </Link>
           <Drawer direction="right" open={open} onOpenChange={setOpen}>
             <DrawerTrigger>
-              <div className="bg-[#DDDCDB3D] border rounded-3xl border-white h-12.5 w-14.5 flex justify-center items-center cursor-pointer">
-                <MenuIcon size={32} color="white" />
+              <div className="bg-[#DDDCDB3D] border rounded-3xl border-white h-8 sm:h-10 md:h-12.5 w-10 sm:w-12 md:w-14.5 flex justify-center items-center cursor-pointer">
+                <MenuIcon
+                  className="size-6 sm:size-7 md:size-8"
+                  color="white"
+                />
               </div>
             </DrawerTrigger>
             <DrawerContent className="h-fit p-4 rounded-b-lg">
@@ -89,10 +93,10 @@ const Navbar = () => {
               </div>
             </DrawerContent>
           </Drawer>
-        </div>
+        </nav>
       </div>
-      <div className="bg-[#DDDCDB3D] border rounded-3xl border-white max-h-16.25 h-full fixed hidden lg:block w-[90%] mt-12 px-4 xl:px-6">
-        <div className="flex justify-between items-center h-full">
+      <div className="bg-[#DDDCDB3D] border rounded-3xl border-white min-h-16.25 h-full static hidden lg:block w-[90%] mt-12 px-4 xl:px-6 py-2">
+        <nav className="flex justify-between items-center h-full">
           <Link href={"/"} className="block w-[102px] h-[27px]">
             <Image
               src={"/jooav-logo-2.svg"}
@@ -121,7 +125,7 @@ const Navbar = () => {
             })}
           </div>
           <Button>Get Started</Button>
-        </div>
+        </nav>
       </div>
     </div>
   );

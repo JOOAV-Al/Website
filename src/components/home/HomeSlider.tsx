@@ -117,7 +117,7 @@ export default function HeroCarousel() {
                           setDirection(index > currentSlide ? 1 : -1);
                           setCurrentSlide(index);
                         }}
-                        className={`h-2 p-0 rounded-full transition-all duration-300 ${
+                        className={`h-2 p-0! rounded-full transition-all duration-300 ${
                           index === currentSlide
                             ? "w-12 bg-app-secondary"
                             : "w-6 bg-[#3b91ed]"

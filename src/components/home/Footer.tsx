@@ -56,13 +56,13 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <div className="flex-1 flex flex-col mdl:flex-row gap-20 sm:justify-center mdxl:justify-around">
+        <div className="flex-1 flex flex-col mdl:flex-row gap-x-20 gap-y-6 sm:justify-center mdxl:justify-around">
           {links?.map((section, i) => {
             const { linkName, links } = section;
             return (
               <div key={i} className="text-[#FEFAEB] flex flex-col gap-2">
                 <h3 className="text-[28px] font-semibold">{linkName}</h3>
-                <div className="flex flex-col gap-6 pb-6">
+                <div className="flex flex-col gap-4 pb-6">
                   {links?.map((link, i) => {
                     const { url, label } = link;
                     return (

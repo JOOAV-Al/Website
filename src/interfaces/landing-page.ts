@@ -6,6 +6,7 @@ export interface NavLinkItem {
 export interface CoreValue{
   value: string;
   desc: string;
+  bgColor?: string;
 }
 
 export interface CoreProducts{
@@ -34,4 +35,18 @@ export interface Testimonial {
 export interface FAQ{
   question: string;
   answer: string;
+}
+
+export interface Team {
+  name: string;
+  role: string;
+  desc: string;
+  imageMobile: string;
+  imageDesktop: string;
+}
+
+export interface OurStory {
+  image: string;
+  text: string;
+  year: string;
 }
