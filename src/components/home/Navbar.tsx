@@ -41,7 +41,7 @@ const Navbar = () => {
   ];
   return (
     <div className="flex justify-center z-40 bg-app-primary border-none!">
-      <div className="static block lg:hidden w-[95%] sm:w-[90%] mt-10 px-2 xl:px-6">
+      <div className="static block lg:hidden w-[95%] sm:w-[90%] mt-6 mb-4 px-2 xl:px-6">
         <nav className="flex flex-row justify-between items-center">
           <Link href={"/"} className="block w-80 lg:w-[102px] ring-0!">
             <Image
@@ -95,7 +95,7 @@ const Navbar = () => {
           </Drawer>
         </nav>
       </div>
-      <div className="bg-[#DDDCDB3D] border rounded-3xl border-white min-h-16.25 h-full static hidden lg:block w-[90%] mt-12 px-4 xl:px-6 py-2">
+      <div className="bg-[#DDDCDB3D] border rounded-3xl border-white min-h-16.25 h-full static hidden lg:block w-[90%] mt-8 mb-4 px-4 xl:px-6 py-2">
         <nav className="flex justify-between items-center h-full">
           <Link href={"/"} className="block w-[102px] h-[27px]">
             <Image

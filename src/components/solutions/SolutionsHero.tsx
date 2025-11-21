@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const SolutionsHero = () => {
   return (
-    <div className="bg-linear-to-t from-app-primary via-app-primary to-app-primary/30 min-h-screen w-full py-20 flex items-center">
+    <div className="bg-linear-to-b from-app-primary via-app-primary to-white min-h-screen w-full py-20 flex items-center">
       <div className="flex flex-col gap-4 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] max-w-4xl mx-auto">
         <h1 className="hero-header">
           Powering Africa’s Retail Supply Chain Digitally and Physically.

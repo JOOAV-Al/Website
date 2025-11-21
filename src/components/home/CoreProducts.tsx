@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CoreProducts = () => {
   return (
-    <div className="py-25 bg-[#2F7BEB14]">
+    <section className="py-25 bg-[#2F7BEB14]">
       <div className="max-w-[1316px] w-full mx-auto flex flex-col gap-8">
         <div className="flex flex-col-reverse lg:flex-row justify-between gap-6 p-6">
           <div className="flex-1 flex flex-col justify-center lg:justify-start text-center lg:text-start gap-4">
@@ -77,7 +77,7 @@ const CoreProducts = () => {
           Explore Jooav Inventory
         </Button>
       </div>
-    </div>
+    </section>
   );
 };
 

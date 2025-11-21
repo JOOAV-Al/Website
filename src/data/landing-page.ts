@@ -202,3 +202,18 @@ export const ourStory: OurStory[] = [
   },
 
 ]
+
+export const products: CoreValue[] = [
+  {
+    value: "Manufacturer Marketplace",
+    desc: "Order directly from top FMCG manufacturers. Transparent pricing, reliable supply, and no middlemen.",
+  },
+  {
+    value: "Real - Time Tracking",
+    desc: "Monitor every shipment from dispatch to delivery with end-to-end visibility and live updates.",
+  },
+  {
+    value: "Smart Inventory Control",
+    desc: "Easily track stock movement, receive alerts, and manage inventory across multiple locations with our intuitive mobile dashboard.",
+  },
+]
