@@ -1,4 +1,4 @@
-import { CoreProducts, CoreValue, FAQ, OurStory, Slide, Team, Testimonial } from "@/interfaces/landing-page";
+import { CoreProducts, CoreValue, FAQ, OurSolutions, OurStory, Slide, Team, Testimonial } from "@/interfaces/landing-page";
 
 export const coreValues: CoreValue[] = [
   {
@@ -44,21 +44,21 @@ export const slides: Slide[] = [
     title: "Seamless Distribution",
     description:
       "Ensuring fast, reliable delivery of goods to keep local markets stocked and thriving.",
-    image: "/core-values.webp", // Replace with your image path
+    image: "/van.webp", // Replace with your image path
   },
   {
     id: 2,
     title: "Reliable Logistics",
     description:
       "Connect suppliers with markets efficiently through our advanced distribution network.",
-    image: "/core-values.webp", // Replace with your image path
+    image: "/billboard.webp", // Replace with your image path
   },
   {
     id: 3,
     title: "Smart Solutions",
     description:
       "Technology-driven approach to optimize your supply chain and reduce costs.",
-    image: "/core-values.webp", // Replace with your image path
+    image: "/vannn.webp", // Replace with your image path
   },
 ];
 
@@ -216,4 +216,79 @@ export const products: CoreValue[] = [
     value: "Smart Inventory Control",
     desc: "Easily track stock movement, receive alerts, and manage inventory across multiple locations with our intuitive mobile dashboard.",
   },
+]
+
+export const ourSolutions: OurSolutions[] = [
+  {
+    value: "Supply Chain Management (SCM)",
+    desc: "Streamline the flow of goods from manufacturers to retailers.",
+    image: "/supply-chain.webp",
+    points: [
+      "Centralized dashboard for procurement and demand forecasting.",
+      "AI-driven restock recommendations.",
+      "Direct integration with manufacturer portals for automated ordering."
+    ]
+  },
+  {
+    value: "Warehouse Management Systems (WMS)",
+    desc: "Digitize and automate warehouse operations.",
+    image: "/warehouse-management.webp",
+    points: [
+      "Barcode / QR tracking for inventory movement.",
+      "Real-time mapping for inbound and outbound goods.",
+      "Smart shelf management and space optimization."
+    ]
+  },
+  {
+    value: "Inventory Management System (Jooav ERP)",
+    desc: "Enable SMEs to manage inventory effortlessly.",
+    image: "/inventory-management.webp",
+    points: [
+      "Real-time stock monitoring and order tracking.",
+      "Automatic supplier reorders based on demand signals.",
+      "Profitability analytics and margin insights."
+    ]
+  },
+  {
+    value: "Logistics & Distribution Technology",
+    desc: "Bridge warehouses and retail outlets through optimized delivery.",
+    image: "/logistics.webp",
+    points: [
+      "Real-time fleet and route tracking.",
+      "Automated route optimization for faster fulfillment.",
+      "Logistics provider APIs (e.g., DHL, GIG, Canper Express)."
+    ]
+  },
+  {
+    value: "E-commerce & Omnichannel Technology",
+    desc: "Connect retail, wholesale, and online stores under one system.",
+    image: "/e-commerce.webp",
+    points: [
+      "Online store builder for SMEs.",
+      "Multi-channel inventory synchronization.",
+      "Automated order and payment management."
+    ]
+  },
+  {
+    value: "Real Estate & Business Infrastructure",
+    desc: "Provide SMEs with access to affordable warehousing and retail spaces.",
+    image: "/real-estate.webp",
+    points: [
+      "Book JooavHub warehouse space on demand.",
+      "Shared retail points for franchise or distribution partners.",
+      "Lease-to-own SME facilities for business expansion."
+    ]
+  },
+  {
+    value: "POS Systems with Buy Now, Pay Later (BNPL)",
+    desc: "Empower SMEs to manage sales, payments, and inventory financing seamlessly improving cash flow and customer engagement.",
+    image: "/pos.webp",
+    points: [
+      "Unified POS for order management and payment processing.",
+      "Integrated BNPL option for instant restocking and deferred payment.",
+      "Customer data capture for loyalty and point tracking.",
+      "Real-time transaction analytics and performance insights."
+    ]
+  },
+
 ]

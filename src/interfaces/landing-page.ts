@@ -50,3 +50,10 @@ export interface OurStory {
   text: string;
   year: string;
 }
+
+export interface OurSolutions{
+  value: string;
+  desc: string;
+  image: string;
+  points: string[]
+}

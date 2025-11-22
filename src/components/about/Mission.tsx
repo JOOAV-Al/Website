@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Mission = () => {
   return (
-    <section className="bg-white py-20 flex flex-col xl:flex-row-reverse justify-between gap-6">
+    <section className="bg-white flex flex-col xl:flex-row-reverse justify-between gap-6">
       <div className="flex-4/10 w-full bg-transparent">
         <Image
           src={"/mission-mobile.webp"}

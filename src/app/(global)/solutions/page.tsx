@@ -1,3 +1,4 @@
+import OurSolutions from "@/components/solutions/OurSolutions";
 import SolutionsHero from "@/components/solutions/SolutionsHero";
 import { Button } from "@/components/ui/button";
 
@@ -5,6 +6,7 @@ const SolutionsPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <SolutionsHero />
+      <OurSolutions />
       <section className="bg-app-secondary py-16 px-6">
         <div className="max-w-[825px] mx-auto flex flex-col justify-center gap-6 text-center!">
           <h2 className="section-header text-white! leading-11!">

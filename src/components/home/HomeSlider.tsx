@@ -45,7 +45,7 @@ export default function HeroCarousel() {
   };
 
   return (
-    <div className="relative w-full h-150 lg:h-200 max-h-[80vh] lg:max-h-screen overflow-hidden">
+    <div className="relative w-full h-150 lg:h-175 max-h-[80vh] lg:max-h-screen xl:max-h-full overflow-hidden">
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentSlide}
@@ -75,16 +75,15 @@ export default function HeroCarousel() {
           <div className="relative w-full h-full">
             {/* Background Image */}
             <div
-              className="absolute inset-0 bg-cover bg-center bg-blend-overlay bg-red-200 bg-linear-to-b from-white via-app-primary to-app-primary"
+              className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: `url(${slides[currentSlide].image})`,
+                backgroundImage: `linear-gradient(180deg, rgba(254, 250, 235, 0.17) 0%, rgba(45, 140, 255, 0.66) 40%, rgba(45, 140, 255, .9) 100%), url(${slides[currentSlide].image})`,
               }}
             >
-              {/* <div className="absolute inset-0 bg-linear-to-b from-white to-app-primary" /> */}
             </div>
 
             {/* Content */}
-            <div className="relative z-10 mx-auto h-full flex items-end p-6">
+            <div className="relative z-10 mx-auto h-full flex items-end p-6 sm:p-8 md:p-12 lg:p-16">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -120,7 +119,7 @@ export default function HeroCarousel() {
                         className={`h-2 p-0! rounded-full transition-all duration-300 ${
                           index === currentSlide
                             ? "w-12 bg-app-secondary"
-                            : "w-6 bg-[#3b91ed]"
+                            : "w-6 bg-[#3a91ed]"
                         }`}
                         aria-label={`Go to slide ${index + 1}`}
                       />
