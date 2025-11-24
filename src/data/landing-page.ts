@@ -68,7 +68,7 @@ export const testimonials: Testimonial[] = [
     name: 'Chelle Bonte',
     role: 'Founder',
     company: 'Everyday',
-    content: 'Since adopting Jooav Inventory, we\'ve reduced stockouts by 30% and improved turnover by 35%.',
+    content: `Since adopting Jooav Inventory, we've reduced stockouts by 30% and improved turnover by 35%.`,
     rating: 5
   },
   {
@@ -76,7 +76,7 @@ export const testimonials: Testimonial[] = [
     name: 'Owale',
     role: 'Distributor',
     company: '',
-    content: 'We now have more time to focus on our business and logistics. The system they\'re building is exactly what we need.',
+    content: `We now have more time to focus on our business and logistics. The system they're building is exactly what we need.`,
     rating: 5
   },
   {

@@ -19,51 +19,53 @@ const garantpro = localFont({
   variable: "--font-garantpro",
   src: [
     {
-      path: "./fonts/fonnts.com-garantpro-thin.otf",
+      path: "./fonts/garantpro-regular-webfont.woff2",
       weight: "100",
-      style: "thin",
+      style: "normal",
     },
     {
-      path: "./fonts/fonnts.com-garantpro-extralight.otf",
+      path: "./fonts/garantpro-regular-webfont.woff2",
       weight: "200",
-      style: "extralight",
+      style: "normal",
     },
     {
-      path: "./fonts/fonnts.com-garantpro-light.otf",
+      path: "./fonts/garantpro-regular-webfont.woff2",
       weight: "300",
-      style: "light",
+      style: "normal",
     },
     {
-      path: "./fonts/fonnts.com-garantpro-regular.otf",
+      path: "./fonts/garantpro-regular-webfont.woff2",
       weight: "400",
-      style: "regular",
+      style: "normal",
     },
     {
-      path: "./fonts/fonnts.com-garantpro-medium.otf",
+      path: "./fonts/garantpro-bold-webfont.woff2",
       weight: "500",
-      style: "medium",
+      style: "normal",
     },
     {
-      path: "./fonts/fonnts.com-garantpro-semibold.otf",
+      path: "./fonts/garantpro-bold-webfont.woff2",
       weight: "600",
-      style: "semibold",
+      style: "normal",
     },
     {
-      path: "./fonts/fonnts.com-garantpro-bold.otf",
+      path: "./fonts/garantpro-bold-webfont.woff2",
       weight: "700",
-      style: "bold",
+      style: "normal",
     },
     {
-      path: "./fonts/fonnts.com-garantpro-extrabold.otf",
+      path: "./fonts/garantpro-bold-webfont.woff2",
       weight: "800",
-      style: "extrabold",
+      style: "normal",
     },
     {
-      path: "./fonts/fonnts.com-garantpro-black.otf",
+      path: "./fonts/garantpro-bold-webfont.woff2",
       weight: "900",
-      style: "black",
+      style: "normal",
     },
   ],
+  adjustFontFallback: false,
+  fallback: ["system-ui", "arial"],
 });
 
 export const metadata: Metadata = {
@@ -82,7 +84,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${garantpro.variable} antialiased bg-zinc-50 dark:bg-black font-garantpro`}
+        className={`${geistSans.variable} ${geistMono.variable} ${garantpro.variable} antialiased bg-zinc-50 dark:bg-black`}
+        // style={{
+        //   fontFamily:
+        //     "var(--font-garantpro), 'Segoe UI Symbol', 'Apple Color Emoji', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif",
+        // }}
+        style={{
+          fontFamily:
+            "var(--font-garantpro), 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif",
+        }}
       >
         <div className="flex flex-col min-h-screen">
           {/* <Navbar /> */}

@@ -24,7 +24,7 @@ const HomeHero = () => {
             infrastructure, empowering businesses to operate efficiently, access
             inventory seamlessly, and scale sustainably.
           </p>
-          <div className="flex justify-center items-center gap-8 flex-wrap mt-10 sm:mt-12 md:mt-14 lg:mt-16 px-6">
+          <div className="flex justify-center items-center gap-x-8 gap-y-4 flex-wrap mt-10 sm:mt-12 md:mt-14 lg:mt-16 px-6">
             <Button variant={"primary"}>Join the Waitlist</Button>
             <Button variant={"accent"}>Explore Inventory</Button>
           </div>
