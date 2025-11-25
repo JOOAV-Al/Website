@@ -13,7 +13,7 @@ const MoreInformation = () => {
           className="w-full"
         />
       </div>
-      <div className="flex-1 flex justify-center items-center text-center p-6">
+      <div className="flex-1 flex justify-center items-center text-center lg:text-start p-6">
         <div className="max-w-[417px] mx-auto lg:mx-0 flex flex-col gap-6">
           <div className="flex flex-col gap-2">
             <h2 className="section-header">Need more information?</h2>

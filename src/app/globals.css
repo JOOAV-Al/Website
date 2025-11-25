@@ -169,3 +169,18 @@
 .section-desc {
   @apply text-[#49505B] font-normal text-base md:text-lg lg:text-xl leading-6 md:leading-8;
 }
+
+/* .clip-hero {
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+} */
+
+.clip-hero {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 82%,
+    62% 82%,
+    50% 100%,
+    0 100%
+  );
+}

@@ -1,11 +1,12 @@
-import { Button } from "@/components/ui/button";
+"use client"
+import NavButton from "@/components/ui/NavButton";
 import { coreValues } from "@/data/landing-page";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 const CoreValues = () => {
   return (
-    <div className="py-25 bg-white">
+    <div className="py-20 bg-white">
       <div className="max-w-[1216px] w-full mx-auto flex flex-col gap-8">
         <div className="bg-[#FEFAEB] flex flex-col lg:flex-row justify-between gap-12 p-6">
           <div className="flex-1 w-[90%] mx-auto lg:w-full bg-transparent">
@@ -33,12 +34,13 @@ const CoreValues = () => {
               we make every step seamless so you can focus on your business
               while we take care of the rest.
             </p>
-            <Button
-              className="text-app-secondary w-fit mx-auto lg:mx-0 lg:mr-auto xl:mt-4"
+            <NavButton
+              route="/solutions"
               variant={"ghost"}
+              className="text-app-secondary w-fit mx-auto lg:mx-0 lg:mr-auto xl:mt-4"
             >
               Learn More <ArrowRight />
-            </Button>
+            </NavButton>
           </div>
         </div>
         <div className="grid grid-cols-1 mdl:grid-cols-2 mdx:grid-cols-3 lg:grid-cols-4 p-6 gap-8 bg-white">

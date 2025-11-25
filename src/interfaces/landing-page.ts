@@ -55,5 +55,6 @@ export interface OurSolutions{
   value: string;
   desc: string;
   image: string;
-  points: string[]
+  points: string[];
+  withCTAs?: boolean;
 }

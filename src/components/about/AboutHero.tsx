@@ -1,5 +1,6 @@
+"use client";
 import Navbar from "@/components/home/Navbar";
-import { Button } from "@/components/ui/button";
+import NavButton from "@/components/ui/NavButton";
 
 const AboutHero = () => {
   return (
@@ -24,7 +25,9 @@ const AboutHero = () => {
             mobile-first platform.
           </p>
           <div className="flex justify-center items-center gap-8 flex-wrap mt-10 sm:mt-12 md:mt-14 lg:mt-16 px-6">
-            <Button>Join the Waitlist</Button>
+            <NavButton route="/contact-us/#contact-form">
+              Join the Waitlist
+            </NavButton>
           </div>
         </div>
       </div>

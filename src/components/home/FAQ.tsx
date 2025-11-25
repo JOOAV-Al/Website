@@ -9,7 +9,7 @@ import {
 
 const FAQ = () => {
   return (
-    <section className="py-25 bg-[#FBFBFB]">
+    <section className="py-20 bg-[#FBFBFB]">
       <div className="max-w-[95%] w-full mx-auto flex flex-col gap-8 p-6">
         <div className="flex-1 flex flex-col justify-center lg:justify-start text-center lg:text-start gap-4">
           <h2 className="max-w-[548px] mx-auto lg:mx-0 text-app-primary font-semibold text-2xl md:text-[28px] lg:text-[32px]">

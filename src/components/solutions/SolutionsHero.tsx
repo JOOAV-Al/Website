@@ -1,5 +1,6 @@
+"use client"
 import Navbar from "@/components/home/Navbar";
-import { Button } from "@/components/ui/button";
+import NavButton from "@/components/ui/NavButton";
 
 const SolutionsHero = () => {
   return (
@@ -14,18 +15,22 @@ const SolutionsHero = () => {
     >
       <Navbar />
       <div className="flex-1 flex items-center gap-12">
-        <div className="flex flex-col gap-4 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] max-w-4xl mx-auto">
+        <div className="flex flex-col gap-4 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[90%] mx-auto text-center lg:text-start ">
           <h1 className="hero-header">
             Powering Africa’s Retail Supply Chain Digitally and Physically.
           </h1>
-          <p className="hero-desc">
+          <p className="hero-desc max-w-[901px]">
             From inventory management to logistics, warehousing, and financial
             inclusion Jooav builds the connected systems that keep Africa’s
             retail economy moving.
           </p>
-          <div className="flex justify-start items-center gap-8 flex-wrap mt-10 sm:mt-12 md:mt-14 lg:mt-16 px-6">
-            <Button>Explore Solutions</Button>
-            <Button variant={"accent"}>Get Started</Button>
+          <div className="flex justify-center lg:justify-start items-center gap-x-3 gap-y-[29px] flex-wrap mt-10 sm:mt-12 md:mt-14 lg:mt-16">
+            <NavButton
+              route="/contact-us/#contact-form"
+              variant="accent"
+            >
+              Get Started
+            </NavButton>
           </div>
         </div>
       </div>

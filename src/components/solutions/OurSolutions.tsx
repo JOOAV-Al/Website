@@ -1,11 +1,12 @@
 "use client";
 
-import { coreProducts, ourSolutions, ourStory } from "@/data/landing-page";
+import NavButton from "@/components/ui/NavButton";
+import { ourSolutions } from "@/data/landing-page";
 import Image from "next/image";
 
 export default function OurSolutions() {
   return (
-    <section className="py-20 bg-[#2F7BEB14] lg:px-8">
+    <section className="py-20 bg-white lg:px-8 bg-none lg:bg-[url(/large-joav-logo.svg)]">
       <div className="max-w-[90%] lg:max-w-[1241px] w-full mx-auto flex flex-col gap-16">
         {/* Section Header */}
         <div className="flex-1 flex flex-col gap-3 md:gap-1 justify-center text-center">
@@ -23,8 +24,9 @@ export default function OurSolutions() {
         </div>
         <div className="grid grid-cols-1 gap-20 lg:gap-24">
           {ourSolutions?.map((cp, i) => {
-            const { value, desc, image, points } = cp;
-            const isReversed = i % 2 == 1
+            const { value, desc, image, points, withCTAs } = cp;
+            const isReversed = i % 2 == 1;
+
             return (
               <div
                 key={i}
@@ -71,6 +73,18 @@ export default function OurSolutions() {
                       </div>
                     ))}
                   </div>
+                  {withCTAs ? (
+                    <div className="flex justify-center lg:justify-start items-center gap-x-3 gap-y-[29px] flex-wrap mt-4">
+                      <NavButton route="/products">Explore Jooav Inventory</NavButton>
+                      <NavButton route="/contact-us/#contact-form" className="ring" variant={"accent"}>
+                        Join the waitlist
+                      </NavButton>
+                    </div>
+                  ) : (
+                    <p className="text-app-secondary italic text-center lg:text-start font-medium mt-4">
+                      Coming soon
+                    </p>
+                  )}
                 </div>
               </div>
             );

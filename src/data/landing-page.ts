@@ -247,7 +247,8 @@ export const ourSolutions: OurSolutions[] = [
       "Real-time stock monitoring and order tracking.",
       "Automatic supplier reorders based on demand signals.",
       "Profitability analytics and margin insights."
-    ]
+    ],
+    withCTAs: true
   },
   {
     value: "Logistics & Distribution Technology",

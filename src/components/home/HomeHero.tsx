@@ -1,5 +1,6 @@
+"use client"
 import Navbar from "@/components/home/Navbar";
-import { Button } from "@/components/ui/button";
+import NavButton from "@/components/ui/NavButton";
 
 const HomeHero = () => {
   return (
@@ -24,9 +25,13 @@ const HomeHero = () => {
             infrastructure, empowering businesses to operate efficiently, access
             inventory seamlessly, and scale sustainably.
           </p>
-          <div className="flex justify-center items-center gap-x-8 gap-y-4 flex-wrap mt-10 sm:mt-12 md:mt-14 lg:mt-16 px-6">
-            <Button variant={"primary"}>Join the Waitlist</Button>
-            <Button variant={"accent"}>Explore Inventory</Button>
+          <div className="flex justify-center items-center gap-x-3 gap-y-[29px] flex-wrap mt-10 sm:mt-12 md:mt-14 lg:mt-16 px-6">
+            <NavButton route="/contact-us/#contact-form" variant="primary">
+              Join the Waitlist
+            </NavButton>
+            <NavButton route="/products" variant="accent">
+              Explore Inventory
+            </NavButton>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
-import { Button } from '@/components/ui/button';
+"use client"
+import NavButton from '@/components/ui/NavButton';
 
 const Join = () => {
   return (
@@ -7,9 +8,13 @@ const Join = () => {
         Join hundreds of African businesses using Jooav Inventory to simplify
         their supply chain and grow sustainably
       </h2>
-      <Button className="w-fit mx-auto" variant={"accent"}>
+      <NavButton
+        className="w-fit mx-auto block"
+        route="/contact-us/#contact-form"
+        variant="accent"
+      >
         Join the Waitlist
-      </Button>
+      </NavButton>
     </section>
   );
 }

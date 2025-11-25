@@ -2,7 +2,7 @@ import { products } from "@/data/landing-page";
 
 const WhatSetsUsApart = () => {
   return (
-    <section className="py-25 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-[90%] w-full mx-auto">
         <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-10 p-6">
           <div className="flex-4/10 mb-6 lg:mb-0 w-full mx-auto lg:mx-0 text-center lg:text-start">

@@ -1,6 +1,7 @@
+"use client"
 import OurSolutions from "@/components/solutions/OurSolutions";
 import SolutionsHero from "@/components/solutions/SolutionsHero";
-import { Button } from "@/components/ui/button";
+import NavButton from "@/components/ui/NavButton";
 
 const SolutionsPage = () => {
   return (
@@ -20,9 +21,13 @@ const SolutionsPage = () => {
           <p className="section-desc text-white!">
             Partner with us: <strong>support@jooav.com</strong>
           </p>
-          <Button className="w-fit mx-auto" variant={"accent"}>
-            Join the Waitlist
-          </Button>
+          <NavButton
+            route="/contact-us/#contact-form"
+            className="w-fit mx-auto"
+            variant={"accent"}
+          >
+            Join the waitlist
+          </NavButton>
         </div>
       </section>
     </div>

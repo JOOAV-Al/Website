@@ -31,13 +31,13 @@ const ProductsHero = () => {
             <h1 className="hero-header">
               Redefining Inventory Management for Africa's Retail Economy
             </h1>
-            <p className="hero-desc max-w-[1077px]">
+            <p className="hero-desc">
               Our flagship mobile-first ERP platform helps small and medium
               businesses manage inventory, restock from manufacturers, and gain
               full visibility across the FMCG value chain.
             </p>
             <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16">
-              <NavButton className='w-fit mx-auto block' route="/contact-us/#contact-form">
+              <NavButton route="/contact-us/#contact-form" className='w-fit mx-auto lg:mx-0 block'>
                 Join the Waitlist
               </NavButton>
             </div>

@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,6 +12,7 @@ import {
 } from "@/components/ui/drawer";
 import { useState } from "react";
 import { NavLinkItem } from "@/interfaces/landing-page";
+import NavButton from "@/components/ui/NavButton";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -95,7 +95,7 @@ const Navbar = () => {
           </Drawer>
         </nav>
       </div>
-      <div className="bg-[#DDDCDB3D] border rounded-3xl border-white min-h-16.25 h-full static hidden lg:block w-[90%] mt-12 px-4 xl:px-6 py-2">
+      <div className="bg-[#DDDCDB3D] border rounded-3xl border-white h-16.25 static hidden lg:block w-[90%] mt-12 px-4 py-2">
         <nav className="flex justify-between items-center h-full">
           <Link href={"/"} className="block w-[102px] h-[27px]">
             <Image
@@ -124,7 +124,8 @@ const Navbar = () => {
               );
             })}
           </div>
-          <Button>Get Started</Button>
+
+          <NavButton route="/contact-us/#contact-form">Get Started</NavButton>
         </nav>
       </div>
     </div>

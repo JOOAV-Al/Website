@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button";
+"use client";
+import NavButton from "@/components/ui/NavButton";
 import { coreProducts } from "@/data/landing-page";
 import Image from "next/image";
 
 const CoreProducts = () => {
   return (
-    <section className="py-25 bg-[#2F7BEB14]">
+    <section className="py-20 bg-[#2F7BEB14]">
       <div className="max-w-[1316px] w-full mx-auto flex flex-col gap-8">
         <div className="flex flex-col-reverse lg:flex-row justify-between gap-6 p-6">
           <div className="flex-1 flex flex-col justify-center lg:justify-start text-center lg:text-start gap-4">
@@ -73,9 +74,13 @@ const CoreProducts = () => {
             />
           </div>
         </div>
-        <Button className="w-fit mx-auto" variant={"primary"}>
+        <NavButton
+          className="w-fit mx-auto block"
+          route="/products"
+          variant="primary"
+        >
           Explore Jooav Inventory
-        </Button>
+        </NavButton>
       </div>
     </section>
   );
