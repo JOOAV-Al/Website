@@ -170,17 +170,14 @@
   @apply text-[#49505B] font-normal text-base md:text-lg lg:text-xl leading-6 md:leading-8;
 }
 
-/* .clip-hero {
-  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
-} */
 
-.clip-hero {
+.clip-hero-bottom {
   clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 82%,
-    62% 82%,
-    50% 100%,
-    0 100%
+    0 0,              /* top left */
+    100% 0,           /* top right */
+    100% 100%,        /* bottom right corner */
+    60% 100%,         /* horizontal along bottom to 70% */
+    55% calc(100% - 50px),  /* step UP by 50px, slight diagonal */
+    0 calc(100% - 50px)     /* continue horizontal to left at raised height */
   );
 }

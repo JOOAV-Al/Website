@@ -1,51 +1,63 @@
-"use client"
-import Navbar from '@/components/home/Navbar';
-import NavButton from '@/components/ui/NavButton';
+"use client";
 
-const ProductsHero = () => {
+import Navbar from "@/components/home/Navbar";
+import NavButton from "@/components/ui/NavButton";
+
+const ContactUsHero = () => {
   return (
-    <div className="min-h-screen w-full pb-20 flex flex-col gap-20 relative overflow-hidden">
-      {/* Overlay - covers full width */}
+    <section className="bg-[#EDF5FB]">
       <div
-        className="absolute inset-0 z-5 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(45, 140, 255, 1) 0%, rgba(45, 140, 255, .8) 100%)",
-        }}
-      />
+        className="
+        min-h-screen w-full pb-20 flex flex-col gap-20 bg-no-repeat bg-cover
+        bg-[url('/con-hero-mob.webp')]
+        lg:bg-[url('/contact-hero.webp')]
+        bg-bottom lg:bg-right
+        relative
+        overflow-hidden
+        clip-hero-bottom
+      "
+      >
+        {/* Gradient Overlay — changes direction on mobile */}
+        <div
+          className="absolute inset-0 pointer-events-none lg:hidden"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(47,123,235,1) 0%, rgba(47,123,235,1) 25%, rgba(47,123,235,0.6) 75%, rgba(47,123,235,0.2) 80%, rgba(255, 255, 255, 0) 100%)",
+          }}
+        />
 
-      {/* Background Image - responsive positioning */}
-      <div
-        className="absolute top-0 h-full bg-no-repeat bg-center w-full max-w-2xl left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:right-12 lg:w-2/5 lg:max-w-[588px] z-0"
-        style={{
-          backgroundImage: "url(/export_import.svg)",
-          backgroundSize: "contain",
-        }}
-      />
+        {/* Desktop Gradient Overlay (left → right) */}
+        <div
+          className="absolute inset-0 pointer-events-none hidden lg:block"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(47,123,235,1) 25%, rgba(45,140,255,0.8) 50%, rgba(0,0,0,0.17) 75%)",
+          }}
+        />
 
-      {/* Content - on top */}
-      <div className="relative z-10 min-h-[calc(100vh-200px)] w-full pb-10 flex flex-col gap-26">
         <Navbar />
-        <div className="flex-1 flex items-center gap-12">
-          <div className="text-center lg:text-start flex flex-col gap-4 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[90%] mx-auto">
+
+        <div className="relative z-10 max-w-[90%] w-full mx-auto flex-1 flex lg:items-center">
+          <div className="flex flex-col gap-4 text-center lg:text-start w-[95%] sm:w-[90%] md:w-[85%] lg:w-[50%] mx-auto lg:mx-0">
             <h1 className="hero-header">
-              Redefining Inventory Management for Africa's Retail Economy
+              Let’s Power Your Retail Growth Together
             </h1>
-            <p className="hero-desc">
-              Our flagship mobile-first ERP platform helps small and medium
-              businesses manage inventory, restock from manufacturers, and gain
-              full visibility across the FMCG value chain.
+
+            <p className="hero-desc max-w-[901px]">
+              Whether you’re a retailer, wholesaler, manufacturer, or financial
+              partner we’d love to hear from you.
             </p>
-            <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16">
-              <NavButton route="/contact-us/#contact-form" className='w-fit mx-auto lg:mx-0 block'>
+
+            <div className="flex justify-center lg:justify-start gap-x-3 gap-y-[29px] flex-wrap mt-10 sm:mt-12 md:mt-14 lg:mt-16">
+              <NavButton route="/contact-us/#contact-form">
                 Join the Waitlist
               </NavButton>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default ProductsHero;
+export default ContactUsHero;
