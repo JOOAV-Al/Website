@@ -14,7 +14,7 @@ const ContactUsHero = () => {
         bg-bottom lg:bg-right
         relative
         overflow-hidden
-        lg:clip-hero-bottom
+        clip-hero-bottom
       "
       >
         {/* Gradient Overlay — changes direction on mobile */}
