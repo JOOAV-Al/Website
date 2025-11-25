@@ -37,7 +37,7 @@ const ProductsHero = () => {
               full visibility across the FMCG value chain.
             </p>
             <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16">
-              <NavButton className='w-fit mx-auto block' route="/contact-us/#contact-form">
+              <NavButton className='w-fit mx-auto lg:mx-0 block' route="/contact-us/#contact-form">
                 Join the Waitlist
               </NavButton>
             </div>
