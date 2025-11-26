@@ -22,14 +22,14 @@ const MoreInformation = () => {
             </p>
           </div>
 
-          <div className="font-medium! section-desc flex flex-col gap-8 lg:gap-4">
+          <div className="font-normal! section-desc flex flex-col gap-8 lg:gap-4">
             <div className="flex gap-4 items-center">
               <PhoneIcon fill="#2F7BEB" size={24} color="#2F7BEB" />
-              <span>0900 000 0000</span>
+              <a href="tel:+2349033930771">+234 9033930771</a>
             </div>
             <div className="flex gap-4 items-center">
               <Mail size={24} color="#2F7BEB" />
-              <span>support@jooav.com</span>
+              <a href="mailto:support@jooav.com">support@jooav.com</a>
             </div>
             <div className="flex gap-4 items-center">
               <Clock size={24} color="#2F7BEB" />

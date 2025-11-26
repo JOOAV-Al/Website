@@ -14,8 +14,8 @@ const AboutHero = () => {
       className="min-h-screen w-full pb-20 flex flex-col gap-20 bg-no-repeat bg-center"
     >
       <Navbar />
-      <div className="flex-1 flex items-center gap-12">
-        <div className="text-center flex flex-col gap-4 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] max-w-4xl mx-auto">
+      <div className="flex-1 flex items-center gap-12 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] mx-auto">
+        <div className="text-center flex flex-col gap-4 max-w-4xl xl:max-w-[1200px] mx-auto">
           <h1 className="hero-header">
             Building Africa’s Virtual Depot for Smarter Retail
           </h1>

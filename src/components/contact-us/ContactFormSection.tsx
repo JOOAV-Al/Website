@@ -71,8 +71,8 @@ const ContactFormSection = () => {
 
   return (
     <section id="contact-form" className="py-20 bg-[#EDF5FB]">
-      <div className="max-w-[1158px] w-full mx-auto flex flex-col items-center lg:flex-row gap-12">
-        <div className="flex-1 w-[90%] max-w-[454px] md:max-w-[600px] lg:max-w-[454px] mx-auto lg:mx-0 lg:w-full text-center lg:text-start flex flex-col gap-2">
+      <div className="max-w-[1158px] 2xl:max-w-[1316px] w-full mx-auto flex flex-col items-center lg:flex-row gap-12">
+        <div className="flex-1 w-[90%] max-w-[454px] md:max-w-[600px] lg:max-w-[554px] mx-auto lg:mx-0 lg:w-full text-center lg:text-start flex flex-col gap-2">
           <h3 className="text-[#03365F] font-semibold text-[28px] md:text-[32px] lg:text-[40px]">
             Join the Jooav Inventory Early Access List
           </h3>
@@ -169,7 +169,7 @@ const ContactFormSection = () => {
               </div>
             </div>
 
-            <Button variant={"primary"} className="mt-8 w-fit mx-auto lg:mx-0">
+            <Button variant={"primary"} className="mt-6 w-fit mx-auto lg:mx-0">
               Join the Waitlist {isPending && <CustomLoader color="white" />}
             </Button>
           </form>

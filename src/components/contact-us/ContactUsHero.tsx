@@ -8,10 +8,10 @@ const ContactUsHero = () => {
     <section className="bg-[#EDF5FB]">
       <div
         className="
-        min-h-screen w-full pb-20 flex flex-col gap-20 bg-no-repeat bg-cover
+        min-h-screen xl:min-h-[900px] 2xl:min-h-[1225px] w-full pb-20 flex flex-col gap-20 bg-no-repeat bg-cover
         bg-[url('/con-hero-mob.webp')]
         lg:bg-[url('/contact-hero.webp')]
-        bg-bottom lg:bg-right
+        bg-bottom lg:bg-right xl:bg-top
         relative
         overflow-hidden
         clip-hero-bottom
@@ -38,7 +38,7 @@ const ContactUsHero = () => {
         <Navbar />
 
         <div className="relative z-10 max-w-[90%] w-full mx-auto flex-1 flex lg:items-center">
-          <div className="flex flex-col gap-4 text-center lg:text-start w-[95%] sm:w-[90%] md:w-[85%] lg:w-[50%] mx-auto lg:mx-0">
+          <div className="flex flex-col gap-4 text-center lg:text-start w-[95%] sm:w-[90%] md:w-[85%] lg:w-[70%] lg:max-w-350 mx-auto lg:mx-0">
             <h1 className="hero-header">
               Let’s Power Your Retail Growth Together
             </h1>

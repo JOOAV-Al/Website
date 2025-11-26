@@ -42,10 +42,10 @@ function AccordionTrigger({
       >
         {children}
         {/* Plus icon when closed */}
-        <PlusCircle className="text-app-primary size-6 lg:size-4 xl:size-6 shrink-0 transition-all duration-200 in-data-[state=open]:hidden" />
+        <PlusCircle className="text-app-primary size-6 lg:size-4 xl:size-6 shrink-0 transition-all duration-200 in-data-[state=open]:hidden hover:rotate-360" />
 
         {/* Minus icon when open */}
-        <MinusCircle className="text-app-primary size-6 lg:size-4 xl:size-6 shrink-0 transition-all duration-200 in-data-[state=closed]:hidden" />
+        <MinusCircle className="text-app-primary size-6 lg:size-4 xl:size-6 shrink-0 transition-all duration-200 in-data-[state=closed]:hidden hover:rotate-360" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

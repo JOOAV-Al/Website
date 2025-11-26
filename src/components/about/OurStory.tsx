@@ -17,13 +17,13 @@ export default function OurStory() {
             sustainably.
           </p>
         </div>
-        <div className="flex-4/10 w-full max-w-[1065px] mx-auto bg-transparent">
+        <div className="flex-4/10 w-full max-w-[1065px] mx-auto bg-transparent py-12">
           <Image
             src={"/our-story.svg"}
             alt="A woman smiling with POS Machine in her hands"
             width={1065}
             height={365}
-            className="w-full h-[365px] hidden md:block"
+            className="w-full h-[365px] hidden md:block animate-bounce [animation-duration:2.5s]"
           />
           <div className="flex flex-col items-center gap-16 md:hidden">
             {ourStory?.map((story, i) => {
