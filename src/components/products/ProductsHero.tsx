@@ -16,7 +16,7 @@ const ProductsHero = () => {
 
       {/* Background Image - responsive positioning */}
       <div
-        className="absolute top-0 h-full bg-no-repeat bg-center w-full max-w-2xl 2xl:max-w-4xl left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:right-12 lg:w-2/5 lg:max-w-[588px] z-0"
+        className="absolute top-0 h-full bg-no-repeat bg-center w-full max-w-2xl 2xl:max-w-4xl left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:right-12 lg:w-2/5 lg:max-w-[588px] z-2 hover:translate-y-[-50px] transition-transform duration-700"
         style={{
           backgroundImage: "url(/export_import.svg)",
           backgroundSize: "contain",
