@@ -6,24 +6,21 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { slides } from "@/data/landing-page";
 
-
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [direction, setDirection] = useState(0);
 
   const slideVariants = {
     enter: (direction: number) => ({
-      x: direction > 0 ? 1000 : -1000,
+      x: direction > 0 ? "100%" : "-100%",
       opacity: 0,
     }),
     center: {
-      zIndex: 1,
       x: 0,
       opacity: 1,
     },
     exit: (direction: number) => ({
-      zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
+      x: direction < 0 ? "100%" : "-100%",
       opacity: 0,
     }),
   };
@@ -45,8 +42,8 @@ export default function HeroCarousel() {
   };
 
   return (
-    <div className="relative w-full h-150 lg:h-175 max-h-[80vh] lg:max-h-screen xl:max-h-full overflow-hidden">
-      <AnimatePresence initial={false} custom={direction}>
+    <div className="relative w-full h-150 lg:h-175 max-h-[80vh] lg:max-h-screen xl:max-h-full overflow-hidden bg-linear-to-b from-blue-400/50 to-app-primary/80">
+      <AnimatePresence initial={false} custom={direction} mode="sync">
         <motion.div
           key={currentSlide}
           custom={direction}
@@ -55,12 +52,12 @@ export default function HeroCarousel() {
           animate="center"
           exit="exit"
           transition={{
-            x: { type: "spring", stiffness: 300, damping: 30 },
-            opacity: { duration: 0.2 },
+            x: { type: "spring", stiffness: 200, damping: 25, mass: 0.8 },
+            opacity: { duration: 0.4 },
           }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={1}
+          dragElastic={0.2}
           onDragEnd={(e, { offset, velocity }) => {
             const swipe = swipePower(offset.x, velocity.x);
 
@@ -73,21 +70,33 @@ export default function HeroCarousel() {
           className="absolute inset-0 w-full h-full"
         >
           <div className="relative w-full h-full">
-            {/* Background Image */}
+            {/* Background Image with Overlay */}
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: `linear-gradient(180deg, rgba(254, 250, 235, 0.17) 0%, rgba(45, 140, 255, 0.66) 40%, rgba(45, 140, 255, .9) 100%), url(${slides[currentSlide].image})`,
+                backgroundImage: `url(${slides[currentSlide].image})`,
               }}
-            >
-            </div>
+            />
+
+            {/* Gradient Overlay - stays constant */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(254, 250, 235, 0.17) 0%, rgba(45, 140, 255, 0.66) 40%, rgba(45, 140, 255, .9) 100%)",
+              }}
+            />
 
             {/* Content */}
             <div className="relative z-10 mx-auto h-full flex items-end p-6 sm:p-8 md:p-12 lg:p-16">
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
+                exit={{ opacity: 0, y: -30 }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                }}
                 className="flex flex-col mdx:flex-row justify-between gap-6 w-full items-center"
               >
                 <div className="max-w-md md:max-w-xl lg:max-w-3xl flex flex-col gap-3 text-center mdx:text-start">
