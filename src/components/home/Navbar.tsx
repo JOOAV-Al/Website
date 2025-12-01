@@ -43,7 +43,7 @@ const Navbar = () => {
     <div className="flex justify-center z-40 bg-transparent border-none!">
       <div className="static block lg:hidden w-[95%] sm:w-[90%] mt-10 px-2 xl:px-6">
         <nav className="flex flex-row justify-between items-center">
-          <Link href={"/"} className="block w-80 lg:w-[102px] ring-0!">
+          {/* <Link href={"/"} className="block w-80 lg:w-[102px] ring-0!">
             <Image
               src={"/jooav-logo-2.svg"}
               alt="JOOAV Logo"
@@ -51,7 +51,14 @@ const Navbar = () => {
               height={27}
               className="h-5 sm:h-6 md:h-[27px]"
             />
-          </Link>
+          </Link> */}
+          <Link href={"/"} className="block w-80 lg:w-[102px] ring-0!">
+           <img
+             src="/jooav-logo-2.svg"
+             alt="JOOAV Logo"
+             className="h-5 sm:h-6 md:h-[27px] object-contain"
+           />
+         </Link>
           <Drawer direction="right" open={open} onOpenChange={setOpen}>
             <DrawerTrigger>
               <div className="bg-[#DDDCDB3D] border rounded-3xl border-white h-8 sm:h-10 md:h-12.5 w-10 sm:w-12 md:w-14.5 flex justify-center items-center cursor-pointer">
@@ -97,12 +104,19 @@ const Navbar = () => {
       </div>
       <div className="bg-[#DDDCDB3D] border rounded-3xl border-white h-16.25 static hidden lg:block w-[90%] mt-12 px-4 py-2">
         <nav className="flex justify-between items-center h-full">
-          <Link href={"/"} className="block w-[102px] h-[27px]">
+          {/* <Link href={"/"} className="block w-[102px] h-[27px]">
             <Image
               src={"/jooav-logo-2.svg"}
               alt="JOOAV Logo"
               width={102}
               height={27}
+            />
+          </Link> */}
+          <Link href={"/"} className="block w-[102px] h-[27px]">
+            <img
+              src="/jooav-logo-2.svg"
+              alt="JOOAV Logo"
+              className="w-[102px] h-[27px] object-contain"
             />
           </Link>
           <div className="flex justify-between items-center gap-4 xl:gap-6">

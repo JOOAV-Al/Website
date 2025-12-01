@@ -158,7 +158,7 @@ export const theTeam: Team[] = [
   {
     name: "Daniel Olowokere",
     role: "Co - founder & CEO",
-    desc: "11+ years transforming retail practices across Nigeria’s South-West.",
+    desc: "2x Founder with over 8 years of experience in venture building and scaling startups.",
     imageMobile: "/co-ceo-mobile.svg",
     imageDesktop: "/co-ceo-desktop.svg"
   },
@@ -171,7 +171,7 @@ export const theTeam: Team[] = [
   },
   {
     name: "Atinuke Aladeojebi",
-    role: "Founder & Procurement Director",
+    role: "Procurement Director/Advisor",
     desc: " 20+ years of supply chain experience, driving $5M+ in recurring FMCG sales.",
     imageMobile: "/procurement-mobile.svg",
     imageDesktop: "/procurement-desktop.svg"
