@@ -15,7 +15,7 @@ const SolutionsPage = () => {
           </h2>
           <p className="section-desc text-white!">
             Whether you’re a retailer, wholesaler, logistics provider, or
-            financial partner Jooav is creating the infrastructure for Africa’s
+            financial partner, Jooav is creating the infrastructure for Africa’s
             next retail revolution.
           </p>
           <p className="section-desc text-white!">

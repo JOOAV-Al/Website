@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Navbar from "@/components/home/Navbar";
 import NavButton from "@/components/ui/NavButton";
 
@@ -20,10 +20,9 @@ const HomeHero = () => {
             Redefining Retail Inventory and Logistics in Africa
           </h1>
           <p className="hero-desc">
-            Revolutionizing FMCG distribution in Africa Jooav connects
-            manufacturers and SMEs through smart digital tools and physical
-            infrastructure, empowering businesses to operate efficiently, access
-            inventory seamlessly, and scale sustainably.
+            Jooav connects manufacturers and SMEs through smart digital tools
+            and physical infrastructure, empowering businesses to operate
+            efficiently, access inventory seamlessly, and scale sustainably.
           </p>
           <div className="flex justify-center items-center gap-x-3 gap-y-[29px] flex-wrap mt-10 sm:mt-12 md:mt-14 lg:mt-16 px-6">
             <NavButton route="/contact-us/#contact-form" variant="primary">

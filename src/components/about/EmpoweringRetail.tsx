@@ -64,7 +64,7 @@ export default function EmpoweringRetail() {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="max-w-[90%] lg:max-w-[750px] mx-auto section-desc"
           >
-            Jooav was founded to solve Africa’s broken retail supply chain, We
+            Jooav was founded to solve Africa’s broken retail supply chain, we
             combine technology, logistics partnerships, and direct manufacturer
             access to empower retailers and wholesalers to grow profitably and
             sustainably.

@@ -45,7 +45,7 @@ const ContactUsHero = () => {
 
             <p className="hero-desc max-w-[901px]">
               Whether you’re a retailer, wholesaler, manufacturer, or financial
-              partner we’d love to hear from you.
+              partner, we’d love to hear from you.
             </p>
 
             <div className="flex justify-center lg:justify-start gap-x-3 gap-y-[29px] flex-wrap mt-10 sm:mt-12 md:mt-14 lg:mt-16">
