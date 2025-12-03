@@ -118,19 +118,28 @@ export const partners: string[] = [
 
 export const faqs: FAQ[] = [
   {question: "How can I track my shipment?",
-    answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
+    answer: "You can track your shipment in real time using your tracking ID on our web application. You'll receive regular updates on your shipment's status from pickup to final delivery."
   },
-  {question: "What areas do you deliver to?",
-    answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
+  {question: "What is Jooav's main focus?",
+    answer: "Jooav focuses on redefining retail inventory and logistics in Africa and revolutionizing FMCG distribution in Africa."
   },
-  {question: "What should I do if my shipment is delayed or damaged?",
-    answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
+  {question: "What is the Jooav Inventory product?",
+    answer: "Jooav Inventory is a mobile-first ERP platform that enables FMCG retailers and wholesalers to monitor stock, restock directly from manufacturers, and manage operations effortlessly in one simple, intelligent dashboard."
+  },
+  {question: "What are the key benefits of using Jooav Inventory?",
+    answer: "The platform provides access to a Manufacturer Marketplace to order directly from FMCG manufacturers at factory-level pricing, Real Time Tracking to track every order from dispatch to delivery, and Smart Inventory Control to manage stock in/out from your phone with real-time updates and alerts."
   },
   {question: "Do you offer customized logistics solutions for businesses?",
-    answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
+    answer: "Yes. We expertly manage every stage of your logistics journey from secure and efficient transit to organized, technology-driven warehousing. We offer solutions to streamline inventory and logistics for retailers with a focus on reliability, transparency, and speed."
+  },
+  {question: "What areas do you deliver to?",
+    answer: "Our logistics services are currently centered on Ondo Akure for now, with a focus on FMCG distribution within the region."
   },
   {question: "How do I get a delivery quote?",
-    answer: "You can track your shipment in real time using your tracking ID on our website or mobile app. You’ll receive regular updates on your shipment’s status from pickup to final delivery."
+    answer: "You can contact our customer care for enquiries."
+  },
+  {question: "What should I do if my shipment is delayed or damaged?",
+    answer: "You should contact our Customer Representative team for more enquiries or support. You can reach them by phone at +234 9033930771 or by email at support@jooav.com"
   },
 ]
 
