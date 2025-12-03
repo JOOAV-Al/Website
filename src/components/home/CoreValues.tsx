@@ -107,7 +107,7 @@ const CoreValues = () => {
               transition={{ delay: 0.5, duration: 0.5 }}
             >
               We expertly manage every stage of your logistics journey from
-              secure and efficient transit to organized, technology driven
+              secure and efficient transit to organized, technology-driven
               warehousing. Our team ensures your goods are handled with
               precision, tracked in real time, and delivered safely to their
               destination. With a focus on reliability, transparency, and speed,

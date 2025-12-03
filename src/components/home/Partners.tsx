@@ -70,9 +70,8 @@ const Partners = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            Hear directly from our customers as they share their experiences,
-            stories, and successes. Their words inspire us to keep delivering
-            the best every day.
+            Trusted by leading manufacturers, brands, and financial partners who
+            rely on Jooav to power efficient retail distribution across Africa.
           </motion.p>
         </motion.div>
 

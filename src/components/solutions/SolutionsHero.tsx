@@ -21,7 +21,7 @@ const SolutionsHero = () => {
           </h1>
           <p className="hero-desc max-w-[901px]">
             From inventory management to logistics, warehousing, and financial
-            inclusion Jooav builds the connected systems that keep Africa’s
+            inclusion, Jooav builds the connected systems that keep Africa’s
             retail economy moving.
           </p>
           <div className="flex justify-center lg:justify-start items-center gap-x-3 gap-y-[29px] flex-wrap mt-10">

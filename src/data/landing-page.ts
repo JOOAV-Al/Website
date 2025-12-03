@@ -22,7 +22,7 @@ export const coreValues: CoreValue[] = [
 export const coreProducts: CoreProducts[] = [
   {
     value: "Manufacturer Marketplace",
-    desc: "Order directly from FMCG manufacturers and access transparent, factory level pricing.",
+    desc: "Order directly from FMCG manufacturers and access transparent, factory-level pricing.",
     icon: "/manu-mart.svg"
   },
   {
@@ -157,7 +157,7 @@ export const theTeam: Team[] = [
   },
   {
     name: "Daniel Olowokere",
-    role: "Co - founder & CEO",
+    role: "Co - founder & COO",
     desc: "2x Founder with over 8 years of experience in venture building and scaling startups.",
     imageMobile: "/co-ceo-mobile.svg",
     imageDesktop: "/co-ceo-desktop.svg"

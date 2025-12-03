@@ -25,7 +25,7 @@ export default function OurSolutions() {
             Our Solutions
           </h2>
           <p className="max-w-[90%] w-[1254px] mx-auto section-desc">
-            At Jooav, we're building Africa's Virtual Depot a seamless ecosystem
+            At Jooav, we're building Africa's Virtual Depot, a seamless ecosystem
             connecting manufacturers, distributors, and retailers through
             technology, logistics, and financial innovation. Our solutions
             integrate both digital tools and real-world infrastructure, giving

@@ -82,7 +82,7 @@ const CoreProducts = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              Meet Jooav Inventory Jooav ERP
+              Meet Jooav Inventory (Jooav ERP)
             </motion.h3>
             <motion.p
               className="max-w-[90%] lg:max-w-[548px] mx-auto lg:mx-0 text-[#49505B] font-normal text-base md:text-sm lg:text-base"
